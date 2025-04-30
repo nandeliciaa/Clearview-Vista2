@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: clearview-capital-site
+    env: static
+    # Diretório contendo os arquivos estáticos, relativo à raiz do repositório.
+    staticPublishPath: ./frontend
+    # O Render detecta automaticamente sites estáticos e não precisa de um comando de build.
+    # Se você tivesse um processo de build (ex: npm run build), você o adicionaria aqui.
+    # buildCommand: "echo No build needed"
+    # Opcional: Adicione regras de reescrita para single-page applications (SPA).
+    # Se o seu site usa roteamento no lado do cliente (ex: React Router, Vue Router),
+    # descomente e ajuste as regras abaixo para direcionar todas as rotas para index.html.
+    # routes:
+    #   - type: rewrite
+    #     source: /*
+    #     destination: /index.html
